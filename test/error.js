@@ -1,5 +1,5 @@
 const er = () => {
-    throw new Error();
+    drive.som();
 };
 
 module.exports = {
