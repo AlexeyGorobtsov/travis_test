@@ -7,7 +7,7 @@ const colorH1 = (driver, By) => {
             } else {
                 // console.log(color);
             }
-        })
+        });
 
 };
 
