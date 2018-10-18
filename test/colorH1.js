@@ -9,10 +9,11 @@ const colorH1 = (driver, By) => {
                 }
             }).catch(e => {
                 console.error(`.catch(${e})`);
-                console.log('testColorH1');
+                throw new Error('colorH1');
             });
     } catch (e) {
         console.error(`try/catch(${e})`);
+
     }
 };
 
