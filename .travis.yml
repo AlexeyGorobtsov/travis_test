@@ -14,9 +14,17 @@ before_install:
  - sudo apt-get install -y libappindicator1 fonts-liberation
  - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
  - sudo dpkg -i google-chrome*.deb
-script:
-  - npm run build
-  - node test
+jobs:
+  fail_fast: true
+
+  include:
+    - stage: basic test
+      env: TEST_SUITE=each-package-tests
+
+    - env: TEST_SUITE=code-quality
+      script:
+        - npm run build
+        - node test
 
 deploy:
   provider: pages
