@@ -8,7 +8,7 @@ const colorH1 = (driver, By) => {
                     // console.log(color);
                 }
             }).catch(e => {
-                throw new Error('COLORH1');
+                throw new Error();
                 console.error(`.catch(${e})`);
                 // const er = new Error('colorH1');
                 // er.name = 'My error';
