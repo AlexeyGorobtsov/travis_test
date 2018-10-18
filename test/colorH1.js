@@ -1,3 +1,4 @@
+
 const colorH1 = (driver, By) => {
     try {
         driver.findElement(By.css('input')).getCssValue('color')
@@ -5,11 +6,10 @@ const colorH1 = (driver, By) => {
                 if (color === 'rgba(255, 0, 0, 1)') {
                     console.log('ok');
                 } else {
-                    require('url').parse(() => {
-                    });
+                    const error = require('./error');
                 }
             }).catch(e => {
-                error = require('./error');
+
                 console.error(`.catch(${e})`);
             });
     } catch (e) {
