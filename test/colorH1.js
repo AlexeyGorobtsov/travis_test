@@ -1,3 +1,5 @@
+const error = require('./error');
+
 const colorH1 = (driver, By) => {
     try {
         driver.findElement(By.css('input')).getCssValue('color')
@@ -8,7 +10,7 @@ const colorH1 = (driver, By) => {
                     // console.log(color);
                 }
             }).catch(e => {
-                throw new Error();
+                error.er();
                 console.error(`.catch(${e})`);
                 // const er = new Error('colorH1');
                 // er.name = 'My error';
