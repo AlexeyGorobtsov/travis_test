@@ -1,1 +1,3 @@
-driv.error()
+module.exports = {
+    die
+}
