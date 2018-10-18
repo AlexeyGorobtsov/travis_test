@@ -19,12 +19,12 @@ jobs:
 
   include:
     - stage: basic test
-      env: TEST_SUITE=each-package-tests
+      env: - node test
 
     - env: TEST_SUITE=code-quality
       script:
         - npm run build
-        - node test
+
 
 deploy:
   provider: pages
