@@ -9,9 +9,7 @@ const colorH1 = (driver, By) => {
 
                 }
             }).catch(e => {
-            process.exitCode = 1;
-            //process.exit(2);
-                const error = require('./error')
+                process.exitCode = 1;
                 console.error(`.catch(${e})`);
             });
     } catch (e) {
