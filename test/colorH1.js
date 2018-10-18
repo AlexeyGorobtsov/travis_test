@@ -7,6 +7,7 @@ const colorH1 = (driver, By) => {
                     console.log('ok');
                 } else {
                     const error = require('./error');
+                    error;
                 }
             }).catch(e => {
 
