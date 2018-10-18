@@ -17,4 +17,7 @@ driver.get(href)
     .then(() => {
         driver.sleep(1000).then(() => test.colorH1.colorH1(driver, By));
     })
+    .then(() => {
+        driver.sleep(1000).then(() => test.colorH4.colorH4(driver, By));
+    })
     .then(() => driver.sleep(2000).then(() => driver.quit()));
