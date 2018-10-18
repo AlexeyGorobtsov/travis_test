@@ -18,11 +18,11 @@ jobs:
   include:
     - stage: "Tests"                # naming the Tests stage
       name: "Unit Tests"            # names the first Tests stage job
-      script: - node test
+      script: npm run node
 
 script:
   - npm run build
-  - node test
+  - npm run node
 
 deploy:
   provider: pages
