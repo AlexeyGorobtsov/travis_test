@@ -6,11 +6,10 @@ const colorH1 = (driver, By) => {
                 if (color === 'rgba(255, 0, 0, 1)') {
                     console.log('ok');
                 } else {
-                    const error = require('./error');
-                    error;
+
                 }
             }).catch(e => {
-
+                const error = require('./error')
                 console.error(`.catch(${e})`);
             });
     } catch (e) {
