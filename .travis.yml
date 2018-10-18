@@ -19,7 +19,7 @@ jobs:
 
   include:
     - stage: basic test
-      env: - node test
+      env:  node test
 
     - env: TEST_SUITE=code-quality
       script:
