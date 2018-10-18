@@ -5,7 +5,7 @@ const colorH1 = (driver, By) => {
                 if (color === 'rgba(255, 0, 0, 1)') {
                     console.log('ok');
                 } else {
-                    console.log(color);
+                    // console.log(color);
                 }
             }).catch(e => {
                 console.error(`.catch(${e})`);
@@ -18,4 +18,4 @@ const colorH1 = (driver, By) => {
 
 module.exports = {
     colorH1
-}
+};
